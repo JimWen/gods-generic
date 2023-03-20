@@ -6,7 +6,7 @@ package doublylinkedlist
 
 import (
 	"encoding/json"
-	"github.com/ugurcsen/gods-generic/containers"
+	"github.com/JimWen/gods-generic/containers"
 )
 
 // Assert Serialization implementation

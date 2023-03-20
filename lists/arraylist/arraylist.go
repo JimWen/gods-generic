@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ugurcsen/gods-generic/lists"
-	"github.com/ugurcsen/gods-generic/utils"
+	"github.com/JimWen/gods-generic/lists"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 // Assert List implementation

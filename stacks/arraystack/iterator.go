@@ -4,7 +4,7 @@
 
 package arraystack
 
-import "github.com/ugurcsen/gods-generic/containers"
+import "github.com/JimWen/gods-generic/containers"
 
 // Assert Iterator implementation
 var _ containers.ReverseIteratorWithIndex[int] = (*Iterator[int])(nil)

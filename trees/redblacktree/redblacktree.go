@@ -13,8 +13,8 @@ package redblacktree
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/trees"
-	"github.com/ugurcsen/gods-generic/utils"
+	"github.com/JimWen/gods-generic/trees"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 // Assert Tree implementation

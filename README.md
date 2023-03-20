@@ -1,9 +1,9 @@
-[![GoDoc](https://godoc.org/github.com/ugurcsen/gods-generic?status.svg)](https://godoc.org/github.com/ugurcsen/gods-generic)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ugurcsen/gods-generic)](https://goreportcard.com/report/github.com/ugurcsen/gods-generic)
-[![Sourcegraph](https://sourcegraph.com/github.com/ugurcsen/gods-generic/-/badge.svg)](https://sourcegraph.com/github.com/ugurcsen/gods-generic?badge)
-[![Release](https://img.shields.io/github/release/ugurcsen/gods-generic.svg?style=flat-square)](https://github.com/ugurcsen/gods-generic/releases)
+[![GoDoc](https://godoc.org/github.com/JimWen/gods-generic?status.svg)](https://godoc.org/github.com/JimWen/gods-generic)
+[![Go Report Card](https://goreportcard.com/badge/github.com/JimWen/gods-generic)](https://goreportcard.com/report/github.com/JimWen/gods-generic)
+[![Sourcegraph](https://sourcegraph.com/github.com/JimWen/gods-generic/-/badge.svg)](https://sourcegraph.com/github.com/JimWen/gods-generic?badge)
+[![Release](https://img.shields.io/github/release/ugurcsen/gods-generic.svg?style=flat-square)](https://github.com/JimWen/gods-generic/releases)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugurcsen_gods-generic&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugurcsen_gods-generic)
-[![PyPI](https://img.shields.io/badge/License-BSD_2--Clause-green.svg)](https://github.com/ugurcsen/gods-generic/blob/master/LICENSE)
+[![PyPI](https://img.shields.io/badge/License-BSD_2--Clause-green.svg)](https://github.com/JimWen/gods-generic/blob/master/LICENSE)
 
 # GoDS-Generic (Go Data Structures With Generics)
 
@@ -14,7 +14,7 @@ Implementation of various data structures and algorithms in Go.
 ### Generic version
 
 ```bash
-go get github.com/ugurcsen/gods-generic
+go get github.com/JimWen/gods-generic
 ```
 
 ### Non Generic version
@@ -154,8 +154,8 @@ Implements [List](#lists), [ReverseIteratorWithIndex](#reverseiteratorwithindex)
 package main
 
 import (
-	"github.com/ugurcsen/gods-generic/lists/arraylist"
-	"github.com/ugurcsen/gods-generic/utils"
+	"github.com/JimWen/gods-generic/lists/arraylist"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 func main() {
@@ -191,8 +191,8 @@ Implements [List](#lists), [IteratorWithIndex](#iteratorwithindex), [EnumerableW
 package main
 
 import (
-	sll "github.com/ugurcsen/gods-generic/lists/singlylinkedlist"
-	"github.com/ugurcsen/gods-generic/utils"
+	sll "github.com/JimWen/gods-generic/lists/singlylinkedlist"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 func main() {
@@ -228,8 +228,8 @@ Implements [List](#lists), [ReverseIteratorWithIndex](#reverseiteratorwithindex)
 package main
 
 import (
-	dll "github.com/ugurcsen/gods-generic/lists/doublylinkedlist"
-	"github.com/ugurcsen/gods-generic/utils"
+	dll "github.com/JimWen/gods-generic/lists/doublylinkedlist"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 func main() {
@@ -291,7 +291,7 @@ Implements [Set](#sets), [JSONSerializer](#jsonserializer) and [JSONDeserializer
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/sets/hashset"
+import "github.com/JimWen/gods-generic/sets/hashset"
 
 func main() {
     set := hashset.New[int]() // empty (keys are of type int)
@@ -318,7 +318,7 @@ Implements [Set](#sets), [ReverseIteratorWithIndex](#reverseiteratorwithindex), 
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/sets/treeset"
+import "github.com/JimWen/gods-generic/sets/treeset"
 
 func main() {
 	set := treeset.NewWithNumberComparator() // empty (keys are of type int)
@@ -345,7 +345,7 @@ Implements [Set](#sets), [ReverseIteratorWithIndex](#reverseiteratorwithindex), 
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/sets/linkedhashset"
+import "github.com/JimWen/gods-generic/sets/linkedhashset"
 
 func main() {
 	set := linkedhashset.New[int]() // empty
@@ -394,7 +394,7 @@ Implements [Stack](#stacks), [IteratorWithIndex](#iteratorwithindex), [JSONSeria
 ```go
 package main
 
-import lls "github.com/ugurcsen/gods-generic/stacks/linkedliststack"
+import lls "github.com/JimWen/gods-generic/stacks/linkedliststack"
 
 func main() {
 	stack := lls.New[int]()  // empty
@@ -421,7 +421,7 @@ Implements [Stack](#stacks), [IteratorWithIndex](#iteratorwithindex), [JSONSeria
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/stacks/arraystack"
+import "github.com/JimWen/gods-generic/stacks/arraystack"
 
 func main() {
 	stack := arraystack.New[int]() // empty
@@ -480,7 +480,7 @@ Implements [Map](#maps), [JSONSerializer](#jsonserializer) and [JSONDeserializer
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/maps/hashmap"
+import "github.com/JimWen/gods-generic/maps/hashmap"
 
 func main() {
 	m := hashmap.New[int, string]() // empty
@@ -507,7 +507,7 @@ Implements [Map](#maps), [ReverseIteratorWithIndex](#reverseiteratorwithindex), 
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/maps/treemap"
+import "github.com/JimWen/gods-generic/maps/treemap"
 
 func main() {
 	m := treemap.NewWithNumberComparator[string]() // empty (keys are of type int)
@@ -538,7 +538,7 @@ Implements [Map](#maps), [ReverseIteratorWithIndex](#reverseiteratorwithindex), 
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/maps/linkedhashmap"
+import "github.com/JimWen/gods-generic/maps/linkedhashmap"
 
 func main() {
     m := linkedhashmap.New[int, string]() // empty (keys are of type int)
@@ -566,7 +566,7 @@ Implements [BidiMap](#maps), [JSONSerializer](#jsonserializer) and [JSONDeserial
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/maps/hashbidimap"
+import "github.com/JimWen/gods-generic/maps/hashbidimap"
 
 func main() {
     m := hashbidimap.New[int, string]() // empty
@@ -596,8 +596,8 @@ Implements [BidiMap](#maps), [ReverseIteratorWithIndex](#reverseiteratorwithinde
 package main
 
 import (
-	"github.com/ugurcsen/gods-generic/maps/treebidimap"
-	"github.com/ugurcsen/gods-generic/utils"
+	"github.com/JimWen/gods-generic/maps/treebidimap"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 func main() {
@@ -650,7 +650,7 @@ package main
 
 import (
 	"fmt"
-	rbt "github.com/ugurcsen/gods-generic/trees/redblacktree"
+	rbt "github.com/JimWen/gods-generic/trees/redblacktree"
 )
 
 func main() {
@@ -699,7 +699,7 @@ func main() {
 }
 ```
 
-Extending the red-black tree's functionality  has been demonstrated in the following [example](https://github.com/ugurcsen/gods-generic/blob/master/examples/redblacktreeextended/redblacktreeextended.go).
+Extending the red-black tree's functionality  has been demonstrated in the following [example](https://github.com/JimWen/gods-generic/blob/master/examples/redblacktreeextended/redblacktreeextended.go).
 
 #### AVLTree
 
@@ -716,7 +716,7 @@ package main
 
 import (
 	"fmt"
-	avl "github.com/ugurcsen/gods-generic/trees/avltree"
+	avl "github.com/JimWen/gods-generic/trees/avltree"
 )
 
 func main() {
@@ -783,7 +783,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/trees/btree"
+	"github.com/JimWen/gods-generic/trees/btree"
 )
 
 func main() {
@@ -855,8 +855,8 @@ Implements [Tree](#trees), [ReverseIteratorWithIndex](#reverseiteratorwithindex)
 package main
 
 import (
-	"github.com/ugurcsen/gods-generic/trees/binaryheap"
-	"github.com/ugurcsen/gods-generic/utils"
+	"github.com/JimWen/gods-generic/trees/binaryheap"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 func main() {
@@ -921,7 +921,7 @@ Implements [Queue](#queues), [IteratorWithIndex](#iteratorwithindex), [JSONSeria
 ```go
 package main
 
-import llq "github.com/ugurcsen/gods-generic/queues/linkedlistqueue"
+import llq "github.com/JimWen/gods-generic/queues/linkedlistqueue"
 
 // LinkedListQueueExample to demonstrate basic usage of LinkedListQueue
 func main() {
@@ -949,7 +949,7 @@ Implements [Queue](#queues), [ReverseIteratorWithIndex](#iteratorwithindex), [JS
 ```go
 package main
 
-import aq "github.com/ugurcsen/gods-generic/queues/arrayqueue"
+import aq "github.com/JimWen/gods-generic/queues/arrayqueue"
 
 // ArrayQueueExample to demonstrate basic usage of ArrayQueue
 func main() {
@@ -979,7 +979,7 @@ Implements [Queue](#queues), [ReverseIteratorWithIndex](#iteratorwithindex), [JS
 ```go
 package main
 
-import cb "github.com/ugurcsen/gods-generic/queues/circularbuffer"
+import cb "github.com/JimWen/gods-generic/queues/circularbuffer"
 
 // CircularBufferExample to demonstrate basic usage of CircularBuffer
 func main() {
@@ -1011,8 +1011,8 @@ Implements [Queue](#queues), [ReverseIteratorWithIndex](#iteratorwithindex), [JS
 package main
 
 import (
-  pq "github.com/ugurcsen/gods-generic/queues/priorityqueue"
-  "github.com/ugurcsen/gods-generic/utils"
+  pq "github.com/JimWen/gods-generic/queues/priorityqueue"
+  "github.com/JimWen/gods-generic/utils"
 )
 
 // Element is an entry in the priority queue
@@ -1099,7 +1099,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/sets/treeset"
+	"github.com/JimWen/gods-generic/sets/treeset"
 )
 
 type User struct {
@@ -1363,7 +1363,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/sets/treeset"
+	"github.com/JimWen/gods-generic/sets/treeset"
 )
 
 func printSet(txt string, set *treeset.Set[int]) {
@@ -1475,7 +1475,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/maps/treemap"
+	"github.com/JimWen/gods-generic/maps/treemap"
 )
 
 func printMap(txt string, m *treemap.Map[string, int]) {
@@ -1551,7 +1551,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ugurcsen/gods-generic/maps/hashmap"
+	"github.com/JimWen/gods-generic/maps/hashmap"
 )
 
 func main() {
@@ -1585,7 +1585,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ugurcsen/gods-generic/lists/arraylist"
+	"github.com/JimWen/gods-generic/lists/arraylist"
 )
 
 func main() {
@@ -1612,7 +1612,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ugurcsen/gods-generic/maps/hashmap"
+	"github.com/JimWen/gods-generic/maps/hashmap"
 )
 
 func main() {
@@ -1635,7 +1635,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ugurcsen/gods-generic/lists/arraylist"
+	"github.com/JimWen/gods-generic/lists/arraylist"
 )
 
 func main() {
@@ -1661,7 +1661,7 @@ Internally these all use the _utils.Sort()_ method:
 ```go
 package main
 
-import "github.com/ugurcsen/gods-generic/utils"
+import "github.com/JimWen/gods-generic/utils"
 
 func main() {
 	strings := []string{}                  // []
@@ -1689,8 +1689,8 @@ Usage:
 package main
 
 import (
-	"github.com/ugurcsen/gods-generic/lists/arraylist"
-	"github.com/ugurcsen/gods-generic/utils"
+	"github.com/JimWen/gods-generic/lists/arraylist"
+	"github.com/JimWen/gods-generic/utils"
 )
 
 func main() {
@@ -1983,4 +1983,4 @@ errcheck ./...
 
 ### License
 
-This library is distributed under the BSD-style license found in the [LICENSE](https://github.com/ugurcsen/gods-generic/blob/master/LICENSE) file.
+This library is distributed under the BSD-style license found in the [LICENSE](https://github.com/JimWen/gods-generic/blob/master/LICENSE) file.

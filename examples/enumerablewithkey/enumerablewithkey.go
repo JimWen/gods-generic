@@ -6,7 +6,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/maps/treemap"
+	"github.com/JimWen/gods-generic/maps/treemap"
 )
 
 func printMap(txt string, m *treemap.Map[string, int]) {

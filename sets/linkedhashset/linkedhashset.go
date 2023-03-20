@@ -15,8 +15,8 @@ package linkedhashset
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/lists/doublylinkedlist"
-	"github.com/ugurcsen/gods-generic/sets"
+	"github.com/JimWen/gods-generic/lists/doublylinkedlist"
+	"github.com/JimWen/gods-generic/sets"
 	"strings"
 )
 

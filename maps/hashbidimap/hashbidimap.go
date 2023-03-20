@@ -17,8 +17,8 @@ package hashbidimap
 
 import (
 	"fmt"
-	"github.com/ugurcsen/gods-generic/maps"
-	"github.com/ugurcsen/gods-generic/maps/hashmap"
+	"github.com/JimWen/gods-generic/maps"
+	"github.com/JimWen/gods-generic/maps/hashmap"
 )
 
 // Assert Map implementation

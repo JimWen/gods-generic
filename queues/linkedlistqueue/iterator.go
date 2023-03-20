@@ -4,7 +4,7 @@
 
 package linkedlistqueue
 
-import "github.com/ugurcsen/gods-generic/containers"
+import "github.com/JimWen/gods-generic/containers"
 
 // Assert Iterator implementation
 var _ containers.IteratorWithIndex[int] = (*Iterator[int])(nil)
