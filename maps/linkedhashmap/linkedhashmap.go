@@ -22,13 +22,13 @@ import (
 var _ maps.Map[int, int] = (*Map[int, int])(nil)
 
 // Map holds the elements in a regular hash table, and uses doubly-linked list to store key ordering.
-type Map[K, T comparable] struct {
+type Map[K comparable, T any] struct {
 	table    map[K]T
 	ordering *doublylinkedlist.List[K]
 }
 
 // New instantiates a linked-hash-map.
-func New[K, T comparable]() *Map[K, T] {
+func New[K comparable, T any]() *Map[K, T] {
 	return &Map[K, T]{
 		table:    make(map[K]T),
 		ordering: doublylinkedlist.New[K](),
